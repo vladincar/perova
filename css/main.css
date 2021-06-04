@@ -24,11 +24,20 @@ a {
 html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--white);
   font-size: 1.8rem;
+}
+
+::-webkit-scrollbar {
+  background-color: #c5c4c2;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0280c9;
 }
 
 header ul {
