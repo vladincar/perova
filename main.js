@@ -10,7 +10,7 @@ removeBar.addEventListener('click', () => {
 const menuIcon = document.querySelector('#menuIcon');
 const menuBcg = document.querySelector('.menuBcg');
 const navUl = document.querySelector('nav').querySelector('ul');
-
+const navA = document.querySelector('nav').querySelectorAll('a');
 
 menuIcon.addEventListener('click', function () {
     menuBcg.classList.toggle('menuBcgOpen');
@@ -19,6 +19,11 @@ menuIcon.addEventListener('click', function () {
     menuIcon.classList.toggle('menuIconOpened');
 })
 
+navA.forEach(x=>{
+    x.addEventListener('click', () => {
+    menuIcon.click()
+})
+})
 //slider
 
 const slider = document.getElementById("slider");
